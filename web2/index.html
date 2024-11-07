@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>寻宝游戏</title>
+  <link href="styles/style.css" rel="stylesheet" />
+</head>
+<body>
+  <div id="game-container">
+    <h1>欢迎来到寻宝游戏！</h1>
+    <button id="startBtn">开始寻宝</button>
+    <div id="animation-container">
+      <div id="animation"></div>
+    </div>
+    <div id="map">
+      <!-- 各个区域的位置 -->
+      <div class="location" id="beach" data-name="沙滩" style="top: 50px; left: 200px; width: 120px;"></div>
+      <div class="location" id="forest" data-name="树林" style="top: 200px; left: 100px; width: 120px;"></div>
+      <div class="location" id="cave" data-name="山洞" style="top: 350px; left: 50px; width: 120px;"></div>
+      <div class="location" id="ancient-city" data-name="古城" style="top: 100px; left: 350px; width: 120px;"></div>
+      <div class="location" id="shipwreck" data-name="藏宝船" style="top: 300px; left: 350px; width: 120px;"></div>
+      <!-- 提示信息 -->
+      <div class="tip" id="beach-tip">你现在进入了沙滩区域！</div>
+      <div class="tip" id="forest-tip">你现在进入了树林区域！</div>
+      <div class="tip" id="cave-tip">你现在进入了山洞区域！</div>
+      <div class="tip" id="ancient-city-tip">你现在进入了古城区域！</div>
+      <div class="tip" id="shipwreck-tip">你现在进入了藏宝船区域！</div>
+      <div class="path" id="path1"></div>  <!-- 连接路径 -->
+      <div class="path" id="path2"></div>
+      <div class="path" id="path3"></div>
+      <div class="path" id="path4"></div>
+    </div>
+    <div id="result"></div>
+    <div id="treasure-image"></div>  <!-- 显示宝藏图片 -->
+  </div>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
